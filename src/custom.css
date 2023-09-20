@@ -1,0 +1,45 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0 !important;
+}
+body {
+  overflow-x: hidden;
+}
+/* start bootstrap styles */
+.container {
+  margin: auto !important;
+}
+.container-fluid {
+  padding: 0 !important;
+}
+.row {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.col {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* end bootstrap styles */
+.pd-y {
+  padding: 104px 0 !important;
+}
+.pd-y-s {
+  padding: 70px 0 !important;
+}
+.mg-t {
+  margin-top: 80px !important;
+}
+.f-wth {
+  width: 100vw !important;
+}
+input,
+input:focus {
+  background-color: none;
+  border: none;
+  outline: none;
+}
