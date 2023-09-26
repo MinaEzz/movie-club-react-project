@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function Navbar() {
+function Navbar({ searchMethod }) {
   const [navbarActive, setNavbarActive] = useState(false);
   const [navbarBackground, setNavbarBackground] = useState(false);
   const [navbarIcon, setNavbarIcon] = useState("fa-solid fa-bars");
@@ -64,10 +64,13 @@ function Navbar() {
               }}
             >
               <input
-                className="form-control me-"
+                className="form-control"
                 type="text"
                 placeholder="Search"
                 aria-label="Search"
+                onChange={(e) => {
+                  searchMethod(e.target.value);
+                }}
               />
               <button type="submit">Search</button>
             </form>

@@ -37,12 +37,3 @@ body {
 .f-wth {
   width: 100vw !important;
 }
-input,
-input:focus {
-  background-color: none;
-  border: none;
-  outline: none;
-}
-ul {
-  list-style: none;
-}
