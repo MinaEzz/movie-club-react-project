@@ -12,10 +12,12 @@ function Main({ movies, totalPages, fetchMoviesByPage }) {
       <main id="main" className="pd-y-s">
         <div className="container">
           <MovieList movies={movies} />
-          <Pagination
-            totalPages={totalPages}
-            fetchMoviesByPage={fetchMoviesByPage}
-          />
+          {movies && (
+            <Pagination
+              totalPages={totalPages}
+              fetchMoviesByPage={fetchMoviesByPage}
+            />
+          )}
         </div>
       </main>
     </>

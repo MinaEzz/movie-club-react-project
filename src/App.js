@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 // components
 import Navbar from "./components/navbar/Navbar.jsx";
 import Main from "./components/main/Main.jsx";
-// import Contact from "./components/contact/Contact.jsx";
+import MovieDetails from "./components/movieDetails/MovieDetails.jsx";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -11,7 +11,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   // api key and apis
   const apiKey = "api_key=10da3093b6fe51d637b06dfabb81fede";
-  const moviesAPI = `https://api.themoviedb.org/3/movie/top_rated?${apiKey}`;
+  const moviesAPI = `https://api.themoviedb.org/3/movie/popular?${apiKey}`;
   // movies fetch function
   const fetchMovies = async (api) => {
     await fetch(api)
@@ -66,7 +66,10 @@ function App() {
             />
           }
         />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route
+          path="/movie/:movieId"
+          element={<MovieDetails apiKey={apiKey} />}
+        />
       </Routes>
     </Router>
   );

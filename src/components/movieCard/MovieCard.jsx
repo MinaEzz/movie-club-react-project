@@ -15,7 +15,7 @@ function MovieCard({ movie }) {
         <h3>{movie.title}</h3>
         <div className="card-body my-4">
           <p>
-            <strong>popularity:</strong> {movie.popularity}{" "}
+            <strong>popularity:</strong> {movie.popularity}
           </p>
           <p>
             <strong>vote average:</strong> {movie.vote_average}
@@ -24,7 +24,9 @@ function MovieCard({ movie }) {
             <strong>date:</strong> {movie.release_date}
           </p>
         </div>
-        <Link className="link-btn">details</Link>
+        <Link className="link-btn" to={`/movie/${movie.id}`}>
+          details
+        </Link>
       </div>
     </div>
   );

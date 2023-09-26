@@ -4,10 +4,13 @@ import ResponsivePagination from "react-responsive-pagination";
 
 function Pagination({ totalPages, fetchMoviesByPage }) {
   const [currentPage, setCurrentPage] = useState(1);
-
   function handlePageChange(page) {
     setCurrentPage(page);
     fetchMoviesByPage(page);
+    window.scroll({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
   }
   return (
     <ResponsivePagination

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import logo from "../../images/logo.png";
 
 function Navbar({ searchMethod }) {
   const [navbarActive, setNavbarActive] = useState(false);
@@ -38,7 +39,7 @@ function Navbar({ searchMethod }) {
     >
       <div className="container">
         <Link className="logo" to="/">
-          <img src="Assets/images/logo.png" alt="" />
+          <img src={logo} alt="logo" />
         </Link>
         {/* ./logo */}
         <button
@@ -79,9 +80,7 @@ function Navbar({ searchMethod }) {
                 <Link to="/login">login</Link>
               </li>
               <li>
-                <Link to="/join" className="link-btn ">
-                  join us for free
-                </Link>
+                <Link className="link-btn ">join us for free</Link>
               </li>
             </ul>
           </div>

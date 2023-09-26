@@ -19,9 +19,7 @@ function Intro() {
             consectetur iure ex deserunt sint accusantium nobis, asperiores
             quidem necessitatibus ipsa.
           </p>
-          <Link to="/contact" className="link-btn">
-            contact us
-          </Link>
+          <Link className="link-btn">contact us</Link>
         </div>
       </div>
     </section>

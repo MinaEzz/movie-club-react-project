@@ -1,0 +1,24 @@
+#movie-details {
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+#movie-details h3 {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0 0.3rem var(--secondary);
+}
+#movie-details img {
+  width: 100%;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+#movie-details .movie-details strong {
+  display: block;
+  letter-spacing: 0.2rem;
+}
