@@ -12,7 +12,7 @@ function MovieCard({ movie }) {
         />
       </div>
       <div className="card-content">
-        <h3>{movie.title}</h3>
+        <h3>{movie.title.slice(0, 33)}</h3>
         <div className="card-body my-4">
           <p>
             <strong>popularity:</strong> {movie.popularity}
